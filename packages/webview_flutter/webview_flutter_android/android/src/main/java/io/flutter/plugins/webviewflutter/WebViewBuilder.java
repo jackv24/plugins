@@ -153,10 +153,10 @@ public class WebViewBuilder {
 
     // Custom settings for ComicWrap-F
     // Zoom controls
-    webSettings.setLoadWithOverviewMode(loadWithOverviewMode);
-    webSettings.setUseWideViewPort(useWideViewPort);
+    webSettings.setLoadWithOverviewMode(true);
+    webSettings.setUseWideViewPort(true);
     webSettings.setDisplayZoomControls(false);
-    webSettings.setBuiltInZoomControls(enableZoom);
+    webSettings.setBuiltInZoomControls(true);
 
     // Allow loading images/etc in mixed mode
     webSettings.setMixedContentMode(WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE);

@@ -150,6 +150,17 @@ public class WebViewBuilder {
     webSettings.setSupportMultipleWindows(supportMultipleWindows);
     webView.setWebChromeClient(webChromeClient);
     webView.setDownloadListener(downloadListener);
+
+    // Custom settings for ComicWrap-F
+    // Zoom controls
+    webSettings.setLoadWithOverviewMode(loadWithOverviewMode);
+    webSettings.setUseWideViewPort(useWideViewPort);
+    webSettings.setDisplayZoomControls(false);
+    webSettings.setBuiltInZoomControls(enableZoom);
+
+    // Allow loading images/etc in mixed mode
+    webSettings.setMixedContentMode(WebSettings.MIXED_CONTENT_COMPATIBILITY_MODE);
+
     return webView;
   }
 }
